@@ -9,7 +9,8 @@
      <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" rel="stylesheet" />
 </head>
 <body>
-    <img width="200" src="/img/LogoTicket.png" alt="Logo">
+    <header class="top-bar">
+    <img width="200" src="/public/css/styles.css" alt="Logo">
      <div>
          <h5><a href="/index.html"></a>Home</h5>
          <p><i class="fa-solid fa-magnifying-glass">Busqueda</i></p>
@@ -18,9 +19,10 @@
          <link name="" rel="stylesheet" href="">
          <a href="/login">Ingresá</a>
      </div>
-     <section>
+    </header>
+     <section class="registro">
          <h1>Registro</h1>
-         <form action="" method="get">
+         <form action="/registro" method="get">
 
              <div>
                  <label for="email">Correo Electronico:</label><br>
@@ -45,14 +47,14 @@
                 </div>
              </div>
             <div>
-                <label for="direccion"></label>
-                <input type="text" id="direccion" minlength="8" required>
+                <label for="direccion">Ingresá tu Dirección:</label><br>
+                <input type="text" id="direccion" minlength="8" required><br>
             </div>
             <div>
-                <label for="localidad"></label>
-                <input type="text" id="localidad" minlength="8" required>
-            </div>
-            <div>
+                <label for="localidad">Localidad:</label><br>
+                <input type="text" id="localidad" minlength="8" required><br>
+            </div><br>
+            <div class="boton">
                 <button type="submit" name="enviar">Terminar</button>
             </div>
 
